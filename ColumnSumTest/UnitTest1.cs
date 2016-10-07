@@ -16,7 +16,7 @@ namespace ColumnSumTest
             List<int> expected = new List<int> { 6, 15, 24, 21 };
 
             IEnumerable<int> columnData = new Table().Get().Select(x => x.Cost);
-
+            
             var columnHandle = new ColumnHandlet<int>();
             columnHandle.SetData(columnData);
 
